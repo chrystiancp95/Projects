@@ -9,3 +9,4 @@ while True:
 
     print(''.join([str(char) for char in guess_word]))
 
+    print('Teste Git')
