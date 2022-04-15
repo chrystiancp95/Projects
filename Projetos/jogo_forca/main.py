@@ -21,7 +21,7 @@ def input_request():
 
 
 """
-def guess_checker(guess_char, secret_word, used_word, life):
+def guess_checker():
     ...
 """
 
