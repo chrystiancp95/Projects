@@ -35,7 +35,6 @@ def wrong_guess(lives):
     print(wrong_msg)
 
 
-# todo integração com o módulo word_library
 def secret_word_selection():
     secret_word = word_library.select_word()
     return secret_word

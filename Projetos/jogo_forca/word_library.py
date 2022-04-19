@@ -55,17 +55,18 @@ def boot():
             load_words = []
             return load_words
 
+
 def select_word():
     try:
         with open("library.txt", "r") as file:
-            load_words = file.readlines()
-            load_words = [line.rstrip for line in load_words]
-            max_word = len(load_words)
-            selected_word = load_words[randint(0, max_word)]
+            lines = file.readlines()
+            load_words = [line.strip() for line in lines]
+            max_word_index = len(load_words) - 1
+            selected_word = load_words[randint(0, max_word_index)]
             return selected_word
-
     except FileNotFoundError:
         print('ERROR: Não há dicionário de palavras criado!')
+
 
 if __name__ == "__main__":
     saved_words = boot()
