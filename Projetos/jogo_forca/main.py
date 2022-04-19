@@ -9,6 +9,7 @@ def check_valid(input_to_valid):
     else:
         return False
 
+
 # todo input_request, check_valid and clear_request could be more abstract
 def input_request(input_msg, error_input_msg):
     while True:
@@ -29,6 +30,7 @@ def guess_checker(secret_word, guess_word, guess_char):
 def wrong_guess(lives):
     wrong_msg = f'Errou! Você tem mais {lives} tentativas'
     print(wrong_msg)
+
 
 # todo integração com o módulo word_library
 def secret_word_selection():
