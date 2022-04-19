@@ -1,3 +1,6 @@
+import word_library
+
+
 def clear_request(input_clear):
     input_clear.strip().lower()
     return input_clear
@@ -34,7 +37,8 @@ def wrong_guess(lives):
 
 # todo integração com o módulo word_library
 def secret_word_selection():
-    return 'test'
+    secret_word = word_library.select_word()
+    return secret_word
 
 
 def welcome_msg():
